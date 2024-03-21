@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  log_bot_test:
+    container_name: log_bot_test
+    build: ..
+    command: python3 main.py
+    env_file:
+      - ../.env
